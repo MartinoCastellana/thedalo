@@ -34,8 +34,6 @@ Il progetto è intenzionalmente **deterministico**: non utilizza modelli di inte
 - [I quattro labirinti](#i-quattro-labirinti)
 - [Struttura del progetto](#struttura-del-progetto)
 - [Test](#test)
-- [Sicurezza](#sicurezza)
-- [Roadmap](#roadmap)
 
 ## Obiettivo
 
@@ -380,37 +378,6 @@ Prima release pubblicabile del nucleo di The DALO:
 - asset SVG animati per documentazione e interfacce.
 
 La release è **alpha**: il nucleo è eseguibile, ma autenticazione amministrativa, middleware completo e isolamento operativo del Minotauro devono essere completati prima dell’esposizione a traffico reale.
-
-## Sicurezza
-
-The DALO è un progetto difensivo e deve essere installato solo su sistemi che si possiedono o si è autorizzati a proteggere.
-
-Prima di un’installazione in produzione:
-
-- proteggere la dashboard con autenticazione forte;
-- disabilitare o rimuovere `public/setup.php` dopo la configurazione;
-- mantenere `config/.key` e `config/settings.enc` fuori dalla root pubblica quando possibile;
-- usare permessi filesystem restrittivi;
-- non salvare password degli utenti nei log;
-- applicare retention e anonimizzazione agli indirizzi IP secondo il contesto normativo;
-- usare soltanto dati sintetici nei decoy;
-- imporre limiti di tempo, memoria e richieste alle sessioni del Minotauro;
-- validare gli eventi provenienti da sistemi esterni;
-- usare HTTPS e ruotare le credenziali PostgreSQL.
-
-The DALO osserva segnali di abuso: non deve diventare un nuovo punto di raccolta indiscriminata di dati sensibili.
-
-## Roadmap
-
-- [ ] Middleware PHP pronto per login e framework comuni.
-- [ ] Autenticazione e ruoli per la dashboard.
-- [ ] Grafici temporali e filtri per IP, sessione e labirinto.
-- [ ] Rate limiting Redis con finestre temporali configurabili.
-- [ ] Challenge e token monouso completi per Arianna.
-- [ ] Ambiente Minotauro isolato e configurabile.
-- [ ] Webhook e alert per eventi critici.
-- [ ] Migrazioni database versionate.
-- [ ] Plugin WordPress nativo con hook di autenticazione.
 
 ## Licenza
 
