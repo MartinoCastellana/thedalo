@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" role="img" aria-labelledby="title desc">
+  <title id="title">The DALO animated labyrinth</title>
+  <desc id="desc">A gold pulse travels through a dark blue labyrinth.</desc>
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#0b1020"/><stop offset="1" stop-color="#17294b"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <rect width="800" height="260" rx="20" fill="url(#bg)"/>
+  <g fill="none" stroke="#405277" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M55 45h690v170H55z M95 85h610v90H95z M135 125h530v10H135z"/><path d="M185 45v40 M265 85v40 M345 135v40 M425 45v80 M505 125v50 M585 45v80 M665 135v40"/><path d="M95 85h90 M265 125h80 M425 125h80 M585 125h80"/></g>
+  <circle cx="95" cy="65" r="7" fill="#7dd3a5"/><circle cx="705" cy="195" r="7" fill="#f07878"/>
+  <path d="M95 65h90v60h80v60h80v-50h80v-70h80v60h80v70h80" fill="none" stroke="#eab464" stroke-width="4" stroke-dasharray="12 12" filter="url(#glow)"><animate attributeName="stroke-dashoffset" from="0" to="-240" dur="4s" repeatCount="indefinite"/></path>
+  <text x="55" y="238" fill="#edf3ff" font-family="system-ui,sans-serif" font-size="16" letter-spacing="3">THE DALO · ENTER THE MAZE</text>
+</svg>

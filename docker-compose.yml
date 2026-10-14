@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: dalo
+      POSTGRES_USER: dalo
+      POSTGRES_PASSWORD: dalo_dev_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - dalo_pgdata:/var/lib/postgresql/data
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/001-schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dalo -d dalo"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+volumes:
+  dalo_pgdata:

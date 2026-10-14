@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180" role="img" aria-labelledby="title desc">
+  <title id="title">The DALO decision flow</title><desc id="desc">Animated signal flows from a request through deterministic scoring to a labyrinth.</desc>
+  <defs><linearGradient id="panel" x1="0" x2="1"><stop stop-color="#121a2f"/><stop offset="1" stop-color="#17294b"/></linearGradient></defs><rect width="900" height="180" rx="18" fill="url(#panel)"/>
+  <g font-family="system-ui,sans-serif" text-anchor="middle"><g fill="#edf3ff" font-size="16"><text x="125" y="80">REQUEST</text><text x="450" y="80">RISK ENGINE</text><text x="775" y="80">LABYRINTH</text></g><g fill="#94a3bf" font-size="12"><text x="125" y="103">signals</text><text x="450" y="103">deterministic score</text><text x="775" y="103">policy</text></g></g>
+  <g stroke="#405277" stroke-width="3"><path d="M205 90h170 M530 90h170"/></g><g fill="#eab464"><circle cx="205" cy="90" r="6"><animate attributeName="cx" values="205;375;205" dur="3s" repeatCount="indefinite"/></circle><circle cx="530" cy="90" r="6"><animate attributeName="cx" values="530;700;530" dur="3s" begin="1.5s" repeatCount="indefinite"/></circle></g>
+  <circle cx="450" cy="90" r="30" fill="none" stroke="#eab464" stroke-width="2" opacity=".6"><animate attributeName="r" values="25;38;25" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".8;0;.8" dur="2s" repeatCount="indefinite"/></circle>
+</svg>

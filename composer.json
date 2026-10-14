@@ -1,0 +1,13 @@
+{
+  "name": "thedalo/dalo",
+  "description": "Deceptive Authentication Layer Orchestrator",
+  "type": "project",
+  "require": {
+    "php": ">=8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dalo\\": "src/"
+    }
+  }
+}
